@@ -16,7 +16,7 @@ var connection = mysql.createConnection({
     database: "Bamazon"
 });
 
-//Display all columns if know error
+//Display all columns if no error
 connection.connect(function(err) {
     if (err) throw err;
     console.log("  ID | Product_Name| Department_name| Price| Stock_quantity" + "\n");
